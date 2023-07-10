@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+ overflow: hidden;
+}
+
+.slideshow-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 152, 0.267);
+}
+
+.details-project{
+  position: absolute;
+  height: 7rem;
+  background: linear-gradient(to right , rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0.10),rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.0));
+  left: 8.7vw;
+  top: 15%;
+  right: 40vw;
+  height: 9rem;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.details-project h2{
+  margin: .3rem;
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  transition: transform 1s linear, opacity 1.5s ease-out ;
+
+}
+
+.slide img {
+  height: 100vh;
+  width: 100%;
+  object-fit: contain;
+}
+
+.text-inner{
+  position: absolute;
+  text-transform: uppercase;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  background-color: rgba(0, 0, 0, 0.852);
+  padding: 6px;
+  border-radius: 5px;
+  text-shadow: 1px 1px 1px rgb(143, 202, 244);
+  top: 90%;
+  cursor: pointer;
+  transition: transform .5s;
+
+}
+
+.text-inner a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.text-inner:hover{
+  transform: scale(1.1);
+}
+
+.live-btn{
+  right: 35%;
+}
+.code{
+  left: 35%;
+}
+
+.arrows-visibility {
+  opacity: 0;
+}
+
+.control:hover {
+  opacity: 1;
+}
+
+.control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 8vw;
+  height: 100vh;
+  background-color: rgba(167, 198, 249, 0.804);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity 0.5s linear;
+}
+
+.left-arrow {
+  left: 0;
+}
+
+.right-arrow {
+  right: 0;
+}
+
+.line {
+  width: 0.2rem;
+  height: 10rem;
+  background-color: rgb(0, 0, 0);
+}
+
+.line-1 {
+  transform: rotate(20deg) translateY(0.35rem);
+}
+
+.line-2 {
+  transform: rotate(-20deg) translateY(-0.35rem);
+}
+
+.line-3 {
+  transform: rotate(-20deg) translateY(0.35rem);
+}
+
+.line-4 {
+  transform: rotate(20deg) translateY(-0.35rem);
+}
+
+.play-pause {
+  cursor: pointer;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.play-pause i {
+  color: #a8a8a8;
+  font-size: 50px;
+}
